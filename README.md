@@ -68,4 +68,4 @@ Three basic strategies:
 DT_Deer.wav and DT_Tier.wav are sampel sounds that you can use to test out the script. The current version of the script will automatically select teh correct landmarks for these sounds. 
 
 # Is this the most current version?
-New versiosn starting with v30 will eb uploaded. Whichever is the most current will be named with "_most_current_version.txt_" in the filename. 
+New versiosn starting with v30 will eb uploaded. Whichever is the most current will be named with "_current_version.txt_" in the filename. 
