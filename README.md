@@ -3,6 +3,12 @@ Praat script to manipulate VOT in natural speech
 
 The script walks the user through a series of steps whereby pre-existing sounds (e.g. “deer” and “tier”) are used to generate a continuum varying by VOT and other related properties. The user initiates a startup window where parameters are declared. Basic parameters include the range of VOT and the number of continuum steps. These are likely the most essential (and perhaps the only) parameters of interest to most readers of this paper. But there are other relevant factors such as starting F0 values for the voiced and voiceless continuum endpoints, whether F0 should change independently or in conjunction with VOT, and the duration (in milliseconds) over which any change in F0 will be imposed on the F0 contour in the syllable. In some cases, the default values of the script are motivated by generally realistic ranges of cues found in natural utterances. In other cases, the values are motivated by best guesses as to what will maintain natural sound quality; the experimenter is able to decide which of these parameters are deserving of extra scrutiny or control. In a case of exploration of a cue without extensive previous literature, the experimenter is encouraged to collect goodness or naturalness ratings along with identification labels. 
 
+## Where to find the tutorial paper:
+https://asa.scitation.org/doi/abs/10.1121/10.0000692
+
+Note: the supplemental materials on this page that have more helpful filenames. 
+
+---------------------------------------------------
 Three basic strategies:
   1) Control VOT and F0 independently
 
