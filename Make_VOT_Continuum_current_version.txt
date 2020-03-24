@@ -68,6 +68,7 @@
 ##		Easier-to-read end-of-script options
 ##		   for things like cutback ratio, forced extra control, etc. 
 ##		Better documentation overall 
+## Version 31: Correct a variable name that would cause an error 
 ###########################################################################
 ###########################################################################
 
@@ -353,6 +354,7 @@ procedure select_aspiration_segment
 			# that's now the value that shows up when you query 'full_aspiration_sound$'
 			full_aspiration_sound$ = selected$ ("Sound")
 			full_aspiration_sound = selected("Sound")
+			original_aspiration_sound = selected("Sound")
 			print used 'full_aspiration_sound$' for the aspiration noise'newline$'
 
 	elsif preselected = 0
@@ -362,6 +364,8 @@ procedure select_aspiration_segment
 			# from that procedure
 			full_aspiration_sound$ = selected$("Sound")
 			full_aspiration_sound = selected("Sound")
+			original_aspiration_sound = selected("Sound")
+
 	endif
 
 	# Get some info to be used later
