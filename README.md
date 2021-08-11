@@ -56,7 +56,7 @@ Three basic strategies:
 		and that the subfolders don't already exist
 		changed some procedure names for transparency
 		Check for adequate version of Praat
-# Version 30: 
+ Version 30: 
     object selection by index instead of name
 		saving functions changed to probably work across platforms
 		   without weird string combinations
@@ -70,10 +70,10 @@ Three basic strategies:
 		Easier-to-read end-of-script options
 		   for things like cutback ratio, forced extra control, etc. 
 		Better documentation overall 
-# Version 31:
+ Version 31:
     updated saving functions
 
-# Version 32:
+ Version 32:
     cleaned up open for-loop
 
 # Sample sounds
