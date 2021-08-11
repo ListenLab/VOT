@@ -5,8 +5,8 @@
 ## Matthew B. Winn 
 ## University of Minnesota
 ##
-## Version 31
-## March 23, 2020
+## Version 32
+## August 3, 2020
 ##
 ## Three basic strategies:
 ##   1) Control VOT and F0 independently
