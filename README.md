@@ -70,6 +70,12 @@ Three basic strategies:
 		Easier-to-read end-of-script options
 		   for things like cutback ratio, forced extra control, etc. 
 		Better documentation overall 
+# Version 31:
+    updated saving functions
+
+# Version 32:
+    cleaned up open for-loop
+
 # Sample sounds
 DT_Deer.wav and DT_Tier.wav are sample sounds that you can use to test out the script. The current version of the script will automatically select teh correct landmarks for these sounds. 
 
