@@ -672,7 +672,7 @@ procedure generate_all_continuum_values
         	        	
         	if shape_vowel_envelope_onset == 1
         		print 'newline$'###############################################'newline$'
-        		print Vowel onset intensitying ramping'newline$'
+        		print Vowel onset intensity ramping'newline$'
         	endif
 endproc
 
