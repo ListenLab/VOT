@@ -5,8 +5,8 @@
 ## Matthew B. Winn 
 ## University of Minnesota
 ##
-## Version 32
-## August 3, 2020
+## Version 33
+## December 7, 2022
 ##
 ## Three basic strategies:
 ##   1) Control VOT and F0 independently
@@ -69,6 +69,10 @@
 ##		   for things like cutback ratio, forced extra control, etc. 
 ##		Better documentation overall 
 ## Version 31: Correct a variable name that would cause an error 
+## Version 32:  Fixed unmathced 'if' statement in line 669
+## Version 33:  The output documentation now correctly reports that there is 
+##		  no change in aspiration intensity if you declined to have 
+##		  aspiration intensity covary along the VOT continuum. 
 ###########################################################################
 ###########################################################################
 
@@ -1408,9 +1412,9 @@ procedure set_variables_at_startup
 	# Default value is to not clean up
 	clean_up_stimuli_in_list = 0
 	
-		if covary = 1
+		if covary == 1
 			total_number_of_stimuli = number_of_VOT_steps
-		elsif covary = 0
+		elsif covary == 0
 			total_number_of_stimuli = number_of_VOT_steps * number_of_f0_steps
 		endif
 
@@ -1419,6 +1423,15 @@ procedure set_variables_at_startup
 				call check_for_clean_up_stimuli
 			endif
 		endif
+
+	############################################
+	# COVARIANCE OF VOT AND ASPIRATION INTENSITY
+	# if the user does nto want to covary aspiration intensity along with VOT,
+	# then set the covariance range to be zero
+		if covary_aspiration_intensity == 0
+			aspiration_intensity_range = 0
+		endif
+
 
 	# Covary intensity along with VOT... set at startup
 	# Apply this also for bursts in prevoiced sounds?
